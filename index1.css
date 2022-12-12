@@ -284,6 +284,12 @@ a {
 .separator:not(:empty)::after {
     margin-left: .25em;
 }
+.list-product-1 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 40px;
+}
 
 @media (min-width: 1800px) {
     #nav-1-left {
@@ -371,7 +377,10 @@ a {
     .separator {
         margin-left: 140px;
         margin-right: 140px;
-
+    }
+    .list-product-1 {
+        margin-left: 140px;
+        margin-right: 140px;
     }
 }
 
@@ -414,7 +423,10 @@ a {
     .separator {
         margin-left: 70px;
         margin-right: 70px;
-
+    }
+    .list-product-1 {
+        margin-left: 70px;
+        margin-right: 70px;
     }
 }
 @media (max-width: 1400px) {
