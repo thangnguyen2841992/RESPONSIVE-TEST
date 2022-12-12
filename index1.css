@@ -221,6 +221,70 @@ body {
     background-color: white;
     margin-left: -50px;
 }
+.list-mobile-1 {
+    list-style: none;
+    display: none;
+}
+.list-mobile-2 {
+    list-style: none;
+    display: none;
+}
+.list-mobile-3 {
+    list-style: none;
+    display: none;
+}
+#list-1:checked ~ .list-mobile-1 {
+    display: block;
+}
+#list-2:checked ~ .list-mobile-2 {
+    display: block;
+}
+#list-3:checked ~ .list-mobile-3 {
+    display: block;
+}
+a {
+    cursor: pointer;
+}
+.list-mobile-1-item:hover {
+    color: blue;
+    text-decoration: deeppink;
+}
+.list-mobile-1-item a {
+    font-size: 15px;
+}
+.carousel {
+    display: flex;
+}
+.right-carousel {
+    margin-left: 10px;
+}
+/*header*/
+.header {
+    text-align: center;
+    margin-top: 10px;
+}
+/*separator*/
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
 @media (min-width: 1800px) {
     #nav-1-left {
         margin-left: 180px;
@@ -248,6 +312,23 @@ body {
 
     .input-search {
         width: 600px;
+    }
+    .left-carousel {
+        margin-left: 220px;
+
+    }
+    .header p {
+        margin-left: 206px;
+        margin-right: 208px;
+    }
+    .separator {
+        margin-left: 220px;
+        margin-right: 220px;
+
+    }
+    .list-product-1 {
+        margin-left: 220px;
+        margin-right: 220px;
     }
 }
 
@@ -279,6 +360,19 @@ body {
     .input-search {
         width: 500px;
     }
+    .left-carousel {
+        margin-left: 140px;
+
+    }
+    .header p {
+        margin-left: 126px;
+        margin-right: 126px;
+    }
+    .separator {
+        margin-left: 140px;
+        margin-right: 140px;
+
+    }
 }
 
 @media (min-width: 1400px) and (max-width: 1600px) {
@@ -309,6 +403,24 @@ body {
     .input-search {
         width: 400px;
     }
+    .left-carousel {
+        margin-left: 80px;
+
+    }
+    .header p {
+        margin-left: 56px;
+        margin-right: 56px;
+    }
+    .separator {
+        margin-left: 70px;
+        margin-right: 70px;
+
+    }
+}
+@media (max-width: 1400px) {
+   #nav-pc-list-1 {
+       width: 80%;
+   }
 }
 
 @media (min-width: 820px) and (max-width: 1024px) {
@@ -351,6 +463,18 @@ body {
     #search-form-2 {
         margin-left: 45px;
     }
+    .left-carousel {
+        width: 70%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    #img-1 {
+        width: 680px;
+    }
+    .right-carousel {
+        margin-right: 10px;
+    }
+
 }
 @keyframes fadeIn {
     from {
